@@ -1,10 +1,12 @@
 type GreetProps = {
   name: string;
-  messageCount: number;
+  messageCount?: number;
   isLoggedIn: boolean;
 };
+// tanda tanya dipakai diakhir agar variablenya menjadi opsional untuk dipakai, sehingga tidak ada error yang terjadi, bisa disebut sebagai optional props
 
 export const Greet = (props: GreetProps) => {
+  const { messageCount = 0 } = props;
   return (
     <div>
       <h2>
