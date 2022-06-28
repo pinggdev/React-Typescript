@@ -1,6 +1,7 @@
 import "./App.css";
-import { Button } from "./components/Button";
-import { Input } from "./components/Input";
+import { Container } from "./components/Container";
+// import { Button } from "./components/Button";
+// import { Input } from "./components/Input";
 // import { Greet } from "./components/Greet";
 // import { Heading } from "./components/Heading";
 // import { Oscar } from "./components/Oscar";
@@ -41,18 +42,19 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar>
       <Greet name="Vishwas" isLoggedIn={false} /> */}
-      <Button
-        // handleClick={() => {
-        //   console.log("Button clicked");
-        // }}
-        // handleClick={(event) => {
-        //   console.log("Button Click", event);
-        // }}
+      {/* <Button
+        handleClick={() => {
+          console.log("Button clicked");
+        }}
+        handleClick={(event) => {
+          console.log("Button Click", event);
+        }}
         handleClick={(event, id) => {
           console.log("Button Click", event, id);
         }}
       />
-      <Input value="" handleChange={(event) => console.log(event)} />
+      <Input value="" handleChange={(event) => console.log(event)} /> */}
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
