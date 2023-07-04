@@ -1,5 +1,7 @@
 import "./App.css";
-import { Counter } from "./components/class/Counter";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
+// import { Counter } from "./components/class/Counter";
 // import { Container } from "./components/Container";
 // import { Button } from "./components/Button";
 // import { Input } from "./components/Input";
@@ -68,7 +70,8 @@ function App() {
         <User />
       </UserContextProvider> */}
 
-      <Counter message="The count value is" />
+      {/* <Counter message="The count value is" /> */}
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
