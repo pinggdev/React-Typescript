@@ -1,4 +1,5 @@
 import "./App.css";
+import { Counter } from "./components/class/Counter";
 // import { Container } from "./components/Container";
 // import { Button } from "./components/Button";
 // import { Input } from "./components/Input";
@@ -11,8 +12,8 @@ import "./App.css";
 // import { PersonList } from "./components/PersonList";
 // import { ThemeContextProvider } from "./components/context/ThemeContext";
 // import { Box } from "./components/context/Box";
-import { UserContextProvider } from "./components/context/UserContext";
-import { User } from "./components/context/User";
+// import { UserContextProvider } from "./components/context/UserContext";
+// import { User } from "./components/context/User";
 
 function App() {
   // const personName = {
@@ -63,9 +64,11 @@ function App() {
         <Box />
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <Counter message="The count value is" />
     </div>
   );
 }
