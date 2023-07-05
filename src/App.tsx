@@ -1,7 +1,8 @@
 import "./App.css";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 // import { Private } from "./components/auth/Private";
 // import { Profile } from "./components/auth/Profile";
-import { List } from "./components/generics/List";
+// import { List } from "./components/generics/List";
 // import { Counter } from "./components/class/Counter";
 // import { Container } from "./components/Container";
 // import { Button } from "./components/Button";
@@ -78,7 +79,7 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-      <List
+      {/* <List
         items={[
           {
             id: 1,
@@ -97,7 +98,8 @@ function App() {
           },
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
